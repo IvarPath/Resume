@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #491c3b;
+    margin: 10px;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.avatar {
+    display: block;
+    max-height: 350px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, .25);
+}
+
+.card {
+    border: 1px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.body_text {
+    background: #b358589a;
+}
+
+
+.body_exp {
+    background: #81b3589a;
+}
+
+.body_info {
+    display: flex;
+
+}
+
+.body_info h1,
+p {
+    margin-left: 20px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(200, 220, 20);
+}
+
+a:active {
+    color: rgb(255, 0, 0);
+}
+
+a:visited {
+    color: rgb(177, 69, 177);
+}
+
+.btn {
+    background: #ab58b3d2;
+    padding: 15px 20px;
+    color: #491c3b;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    opacity: .8;
+    color: gold;
+}
+
+.hobby {
+    padding: 0 40px;
+    margin-bottom: 0px;
+}
+
+.hobby li {
+    margin-bottom: 5px;
+}
+
+.table {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.table td:nth-child(2) {
+    color: #491c3bbb;
+}
+
+.table td:nth-child(3) {
+    color: rgba(73, 28, 59, 0.623);
+}
+
+.links {
+    justify-content: space-around;
+    display: flex;
+    padding-top: 40px;
+}
+
+.links p {
+    margin: 0;
+}
+
+.soclink {
+    width: 100px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .form-group {
+    margin-right: 30px;
+    width: 50%;
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid grey;
+    color: #491c3bbb;
+    padding: 5px 0 5px;
+    outline: none;
+    font-size: 20px;
+}
+
+
+@media (max-width: 550px) {
+    .body_info {
+        display: block;
+    }
+
+    .avatar,
+    h1 {
+        margin-left: 25%;
+        text-align: center;
+    }
+
+
+}

@@ -7,64 +7,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Иван,резюме">
     <meta name="description" content="Этот сайт мое резюме, спасибо за внимание">
+    <link rel="stylesheet" href="styleforResume.css">
     <title> Резюме</title>
 </head>
 
 <body>
-    <img src="AgoQOvGd1nY.jpg" alt="Мое прекрасное фото" width="200">
-    <h1> Иван Павлов </h1>
-    <p>
-        Я <strong>начинаю</strong> свой путь, потому пока не основал и не достиг тех <strong><em>целей</em></strong>,
-        которые наметил себе, но все <strong><em>впереди!</em></strong>
-    </p>
-    <h2> Мои увлечения</h2>
-    <ul>
-        <li>Сон</li>
-        <li>Играть</li>
-        <li>Смотреть</li>
-    </ul>
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название работы</th>
-                <th>Должность</th>
-                <th>Период работы</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Пасека</td>
-                <td>Помощник пасечника</td>
-                <td>2014</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h4> Связаться со мной:
-        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        <a href="https://vk.com" target="_blank">ВК</a>
-    </h4>
-    <form>
-        <div>
-            <label for="name1">Ваше имя:</label>
-            <input type="text" id="name1" placeholder="Введите имя">
-        </div>
-        <br>
-        <div>
-            <label for="email1">Ваш email:</label>
-            <input type="email" id="email1" placeholder="Введите email">
-        </div>
-        <div>
-            <label for="message1">Ваше сообщение:</label>
-            <br>
-            <textarea name="message" placeholder="Введите сообщение . . ." id="message1" cols="31" rows="5"></textarea>
-        </div>
-        <div>
-            <input type="submit" value="Отправить!">
-        </div>
-    </form>
+    <div class="container">
+        <div class="body_info">
+            <img class="avatar" src="AgoQOvGd1nY.jpg" alt="Мое прекрасное фото">
+            <div class="Text">
+                <h1> Иван Павлов </h1>
+                <p>
+                    Я <strong>начинаю</strong> свой путь, потому пока не основал и не достиг тех
+                    <strong><em>целей</em></strong>,
+                    которые наметил себе, но все <strong><em>впереди!</em></strong>
+                </p>
+                <div class="links">
+                    <a href="https://www.instagram.com" target="_blank"><img
+                            src="https://compbest.com.ua/content/uploads/images/znmok-ekrana-2021-03-15-o-16.20.52.png"
+                            class="soclink">
+                        <p>Инстаграм</p>
+                    </a>
 
+                    <a href="https://vk.com" target="_blank"><img
+                            src="https://sun6-22.userapi.com/s/v1/if1/eZo6SfdqSHn9kbg0QQG_apwOI6ftmlYxPMeukReTLCxgCp8T1t6XfPbILWTMJ3osZqctPNqQ.jpg?size=971x971&quality=96&crop=6,0,971,971&ava=1"
+                            class="soclink">
+                        <p>Вконтакте</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="body_text card">
+            <h2> Мои увлечения</h2>
+            <ul class="hobby">
+                <li>Сон</li>
+                <li>Играть</li>
+                <li>Смотреть</li>
+            </ul>
+        </div>
+        <div class="body_exp card">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Название работы</th>
+                        <th>Должность</th>
+                        <th>Период работы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Пасека</td>
+                        <td>Помощник пасечника</td>
+                        <td>2014</td>
+                    </tr>
+                    <tr>
+                        <td>Закусочная</td>
+                        <td>Дегустатор закусок</td>
+                        <td>2015</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <form class="body_colons">
+            <div>
+                <h3> Связаться со мной:</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name1">Ваше имя:</label>
+                        <input type="text" id="name1" placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email1">Ваш email:</label>
+                        <input type="email" id="email1" placeholder="Введите email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message1">Ваше сообщение:</label>
+                    <br>
+                    <textarea name="message" placeholder="Введите сообщение . . ." id="message1" cols="31"
+                        rows="5"></textarea>
+                </div>
+                <input class="btn" type="submit" value="Отправить!">
+        </form>
+    </div>
 </body>
 
 </html>
